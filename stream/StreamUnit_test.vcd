@@ -1,0 +1,59 @@
+$date
+	Sun Apr  3 05:53:21 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module StreamUnit $end
+$var wire 1 ! _zz_io_cmdB_ready $end
+$var wire 1 " _zz_io_cmdB_ready_1 $end
+$var wire 1 # clk $end
+$var wire 8 $ io_cmdA_payload [7:0] $end
+$var wire 1 % io_cmdA_ready $end
+$var wire 1 & io_cmdA_valid $end
+$var wire 32 ' io_cmdB_payload [31:0] $end
+$var wire 1 ( io_cmdB_ready $end
+$var wire 1 ) io_cmdB_valid $end
+$var wire 8 * io_memWrite_payload_address [7:0] $end
+$var wire 32 + io_memWrite_payload_data [31:0] $end
+$var wire 1 , io_memWrite_valid $end
+$var wire 32 - io_rsp_payload [31:0] $end
+$var wire 1 . io_rsp_ready $end
+$var wire 1 / io_rsp_valid $end
+$var wire 1 0 memReadStream_isFree $end
+$var wire 32 1 memReadStream_payload [31:0] $end
+$var wire 1 2 memReadStream_ready $end
+$var wire 1 3 memReadStream_valid $end
+$var wire 1 4 reset $end
+$var reg 1 3 _zz_memReadStream_valid $end
+$var reg 32 5 _zz_mem_port1 [31:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 5
+z4
+x3
+x2
+bx 1
+x0
+x/
+z.
+bx -
+1,
+b11011000001011000000011111001101 +
+b0 *
+z)
+x(
+bz '
+z&
+x%
+bz $
+z#
+x"
+x!
+$end
+#8000001

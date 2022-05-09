@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1652107209" />
+    <testcase name="test1" classname="counter_test" file="/home/zqc/桌面/workshop_cocotb/counter/counter_test.py" lineno="25" time="0.003251791000366211" sim_time_ns="10.001" ratio_time="3075.5359120170097" />
+  </testsuite>
+</testsuites>

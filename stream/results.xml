@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1648958001" />
+    <testcase name="test1" classname="StreamUnit_test" file="/home/zqc/桌面/workshop_cocotb/stream/StreamUnit_test.py" lineno="156" time="0.2026224136352539" sim_time_ns="8000.001" ratio_time="39482.31025616454">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1648965409" />
+    <testcase name="test1" classname="PixelSolverTester" file="/home/zqc/桌面/workshop_cocotb/mandelbrot/pixelSolver/PixelSolverTester.py" lineno="9" time="2.432405710220337" sim_time_ns="80000.001" ratio_time="32889.250614673685">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

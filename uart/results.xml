@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1648481063" />
+    <testcase name="test1" classname="UartCtrlRx_test" file="/home/zqc/桌面/workshop_cocotb/uart/UartCtrlRx_test.py" lineno="58" time="0.21903443336486816" sim_time_ns="1000.001" ratio_time="4565.49677892058" />
+  </testsuite>
+</testsuites>

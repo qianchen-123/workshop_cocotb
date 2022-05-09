@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1648959076" />
+    <testcase name="test1" classname="UdpAppSelfTester" file="/home/zqc/桌面/workshop_cocotb/udp/UdpAppSelfTester.py" lineno="133" time="0.06978416442871094" sim_time_ns="2000.001" ratio_time="28659.811525623856">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,103 @@
+$date
+	Mon May  9 16:41:05 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Counter $end
+$var wire 5 ! _zz_io_full_2 [4:0] $end
+$var wire 1 " clk $end
+$var wire 1 # io_clear $end
+$var wire 4 $ io_value [3:0] $end
+$var wire 1 % reset $end
+$var wire 1 & io_full $end
+$var wire 5 ' _zz_io_full_1 [4:0] $end
+$var wire 5 ( _zz_io_full [4:0] $end
+$var reg 4 ) counter_1 [3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 )
+b0 (
+b1111 '
+0&
+1%
+b0 $
+0#
+0"
+b10000 !
+$end
+#1000
+b1 (
+b1 $
+b1 )
+0%
+1"
+#1500
+0"
+#2000
+b10 (
+b10 $
+b10 )
+1"
+#2500
+0"
+#3000
+b11 (
+b11 $
+b11 )
+1"
+#3500
+0"
+#4000
+b100 (
+b100 $
+b100 )
+1"
+#4500
+0"
+#5000
+b101 (
+b101 $
+b101 )
+1"
+#5500
+0"
+#6000
+b110 (
+b110 $
+b110 )
+1"
+#6500
+0"
+#7000
+b111 (
+b111 $
+b111 )
+1"
+#7500
+0"
+#8000
+b1000 (
+b1000 $
+b1000 )
+1"
+#8500
+0"
+#9000
+b1001 (
+b1001 $
+b1001 )
+1"
+#9500
+0"
+#10000
+b1010 (
+b1010 $
+b1010 )
+1"
+#10001

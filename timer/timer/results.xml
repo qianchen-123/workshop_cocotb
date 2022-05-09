@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1648915416" />
+    <testcase name="timer_test" classname="Timer_test" file="/home/zqc/桌面/workshop_cocotb/timer/timer/Timer_test.py" lineno="37" time="9.1771080493927" sim_time_ns="16276.5" ratio_time="1773.5979474576532">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

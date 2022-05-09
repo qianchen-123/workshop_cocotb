@@ -1,0 +1,228 @@
+$date
+	Sun Apr  3 07:56:50 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module PixelSolver $end
+$var wire 3 ! AddStage_output_payload_id [2:0] $end
+$var wire 28 " AddStage_output_payload_x0 [27:0] $end
+$var wire 28 # AddStage_output_payload_y0 [27:0] $end
+$var wire 1 $ AddStage_output_valid $end
+$var wire 1 % Inserter_cmdContext_done $end
+$var wire 3 & Inserter_cmdContext_id [2:0] $end
+$var wire 6 ' Inserter_cmdContext_iteration [5:0] $end
+$var wire 28 ( Inserter_cmdContext_x [27:0] $end
+$var wire 28 ) Inserter_cmdContext_x0 [27:0] $end
+$var wire 28 * Inserter_cmdContext_y [27:0] $end
+$var wire 28 + Inserter_cmdContext_y0 [27:0] $end
+$var wire 1 , Inserter_loopBack_payload_done $end
+$var wire 3 - Inserter_loopBack_payload_id [2:0] $end
+$var wire 6 . Inserter_loopBack_payload_iteration [5:0] $end
+$var wire 28 / Inserter_loopBack_payload_x [27:0] $end
+$var wire 28 0 Inserter_loopBack_payload_x0 [27:0] $end
+$var wire 28 1 Inserter_loopBack_payload_y [27:0] $end
+$var wire 28 2 Inserter_loopBack_payload_y0 [27:0] $end
+$var wire 1 3 Inserter_loopBack_valid $end
+$var wire 1 4 Inserter_output_valid $end
+$var wire 1 5 Inserter_taskId_willClear $end
+$var wire 1 6 Inserter_taskId_willOverflow $end
+$var wire 1 7 Mulstage_output_payload_done $end
+$var wire 3 8 Mulstage_output_payload_id [2:0] $end
+$var wire 6 9 Mulstage_output_payload_iteration [5:0] $end
+$var wire 28 : Mulstage_output_payload_x0 [27:0] $end
+$var wire 28 ; Mulstage_output_payload_y0 [27:0] $end
+$var wire 1 < Mulstage_output_valid $end
+$var wire 1 = Rounter_taskId_willClear $end
+$var wire 1 > Rounter_taskId_willOverflow $end
+$var wire 28 ? _zz_AddStage_output_payload_done [27:0] $end
+$var wire 1 @ _zz_Inserter_taskId_valueNext_1 $end
+$var wire 1 A _zz_Rounter_taskId_valueNext_1 $end
+$var wire 1 B clk $end
+$var wire 1 C io_cmd_fire $end
+$var wire 28 D io_cmd_payload_x [27:0] $end
+$var wire 28 E io_cmd_payload_y [27:0] $end
+$var wire 1 F io_cmd_valid $end
+$var wire 1 G io_rsp_fire $end
+$var wire 6 H io_rsp_payload_iteration [5:0] $end
+$var wire 1 I io_rsp_ready $end
+$var wire 1 J io_rsp_valid $end
+$var wire 1 K reset $end
+$var wire 1 L io_cmd_ready $end
+$var wire 3 M _zz_Rounter_taskId_valueNext [2:0] $end
+$var wire 56 N _zz_Mulstage_output_payload_yy_1 [55:0] $end
+$var wire 36 O _zz_Mulstage_output_payload_yy [35:0] $end
+$var wire 56 P _zz_Mulstage_output_payload_xy_1 [55:0] $end
+$var wire 36 Q _zz_Mulstage_output_payload_xy [35:0] $end
+$var wire 56 R _zz_Mulstage_output_payload_xx_1 [55:0] $end
+$var wire 36 S _zz_Mulstage_output_payload_xx [35:0] $end
+$var wire 3 T _zz_Inserter_taskId_valueNext [2:0] $end
+$var wire 29 U _zz_AddStage_output_payload_y_2 [28:0] $end
+$var wire 29 V _zz_AddStage_output_payload_y_1 [28:0] $end
+$var wire 29 W _zz_AddStage_output_payload_y [28:0] $end
+$var wire 28 X _zz_AddStage_output_payload_x [27:0] $end
+$var wire 1 Y _zz_AddStage_output_payload_iteration_1 $end
+$var wire 6 Z _zz_AddStage_output_payload_iteration [5:0] $end
+$var wire 28 [ _zz_AddStage_output_payload_done_1 [27:0] $end
+$var wire 1 \ Rounter_taskId_willOverflowIfInc $end
+$var wire 28 ] Mulstage_output_payload_yy [27:0] $end
+$var wire 28 ^ Mulstage_output_payload_xy [27:0] $end
+$var wire 28 _ Mulstage_output_payload_xx [27:0] $end
+$var wire 1 ` Inserter_taskId_willOverflowIfInc $end
+$var wire 28 a AddStage_output_payload_y [27:0] $end
+$var wire 28 b AddStage_output_payload_x [27:0] $end
+$var reg 1 c AddStage_input_payload_done $end
+$var reg 3 d AddStage_input_payload_id [2:0] $end
+$var reg 6 e AddStage_input_payload_iteration [5:0] $end
+$var reg 28 f AddStage_input_payload_x0 [27:0] $end
+$var reg 28 g AddStage_input_payload_xx [27:0] $end
+$var reg 28 h AddStage_input_payload_xy [27:0] $end
+$var reg 28 i AddStage_input_payload_y0 [27:0] $end
+$var reg 28 j AddStage_input_payload_yy [27:0] $end
+$var reg 1 k AddStage_input_valid $end
+$var reg 1 l AddStage_output_payload_done $end
+$var reg 6 m AddStage_output_payload_iteration [5:0] $end
+$var reg 1 n Inserter_output_payload_done $end
+$var reg 3 o Inserter_output_payload_id [2:0] $end
+$var reg 6 p Inserter_output_payload_iteration [5:0] $end
+$var reg 28 q Inserter_output_payload_x [27:0] $end
+$var reg 28 r Inserter_output_payload_x0 [27:0] $end
+$var reg 28 s Inserter_output_payload_y [27:0] $end
+$var reg 28 t Inserter_output_payload_y0 [27:0] $end
+$var reg 3 u Inserter_taskId_value [2:0] $end
+$var reg 3 v Inserter_taskId_valueNext [2:0] $end
+$var reg 1 w Inserter_taskId_willIncrement $end
+$var reg 1 x Mulstage_input_payload_done $end
+$var reg 3 y Mulstage_input_payload_id [2:0] $end
+$var reg 6 z Mulstage_input_payload_iteration [5:0] $end
+$var reg 28 { Mulstage_input_payload_x [27:0] $end
+$var reg 28 | Mulstage_input_payload_x0 [27:0] $end
+$var reg 28 } Mulstage_input_payload_y [27:0] $end
+$var reg 28 ~ Mulstage_input_payload_y0 [27:0] $end
+$var reg 1 !" Mulstage_input_valid $end
+$var reg 1 "" Rounter_input_payload_done $end
+$var reg 3 #" Rounter_input_payload_id [2:0] $end
+$var reg 6 $" Rounter_input_payload_iteration [5:0] $end
+$var reg 28 %" Rounter_input_payload_x [27:0] $end
+$var reg 28 &" Rounter_input_payload_x0 [27:0] $end
+$var reg 28 '" Rounter_input_payload_y [27:0] $end
+$var reg 28 (" Rounter_input_payload_y0 [27:0] $end
+$var reg 1 )" Rounter_input_valid $end
+$var reg 3 *" Rounter_taskId_value [2:0] $end
+$var reg 3 +" Rounter_taskId_valueNext [2:0] $end
+$var reg 1 ," Rounter_taskId_willIncrement $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+x,"
+bx +"
+bx *"
+x)"
+bx ("
+bx '"
+bx &"
+bx %"
+bx $"
+bx #"
+x""
+x!"
+bx ~
+bx }
+bx |
+bx {
+bx z
+bx y
+xx
+0w
+bx v
+bx u
+bz t
+b0 s
+bz r
+b0 q
+b0 p
+bx o
+0n
+bx m
+xl
+xk
+bx j
+bx i
+bx h
+bx g
+bx f
+bx e
+bx d
+xc
+bx b
+bx a
+x`
+bx _
+bx ^
+bx ]
+x\
+bx [
+b0x Z
+xY
+bx X
+bx W
+bx0 V
+bx U
+b0 T
+bx S
+bx R
+bx Q
+bx P
+bx O
+bx N
+b0x M
+xL
+zK
+xJ
+1I
+bx H
+xG
+0F
+bz E
+bz D
+0C
+zB
+xA
+0@
+b10000000000000000000000 ?
+x>
+0=
+x<
+bx ;
+bx :
+bx 9
+bx 8
+x7
+06
+05
+x4
+x3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+x,
+bz +
+b0 *
+bz )
+b0 (
+b0 '
+bx &
+0%
+x$
+bx #
+bx "
+bx !
+$end
+#80000001

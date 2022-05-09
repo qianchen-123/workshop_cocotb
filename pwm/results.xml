@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1648966231" />
+    <testcase name="test1" classname="ApbPwm_test" file="/home/zqc/桌面/workshop_cocotb/pwm/ApbPwm_test.py" lineno="79" time="6.876124858856201" sim_time_ns="49999.501" ratio_time="7271.464964107282" />
+  </testsuite>
+</testsuites>
