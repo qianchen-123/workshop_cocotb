@@ -1,0 +1,459 @@
+$date
+	Mon May 16 23:18:14 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module axi_sram $end
+$var wire 1 ! ACLK $end
+$var wire 32 " ARADDR [31:0] $end
+$var wire 2 # ARBURST [1:0] $end
+$var wire 4 $ ARCACHE [3:0] $end
+$var wire 1 % ARESETn $end
+$var wire 3 & ARID [2:0] $end
+$var wire 8 ' ARLEN [7:0] $end
+$var wire 1 ( ARLOCK $end
+$var wire 3 ) ARPROT [2:0] $end
+$var wire 4 * ARQOS [3:0] $end
+$var wire 4 + ARREGION [3:0] $end
+$var wire 3 , ARSIZE [2:0] $end
+$var wire 2 - ARUSER [1:0] $end
+$var wire 1 . ARVALID $end
+$var wire 32 / AWADDR [31:0] $end
+$var wire 2 0 AWBURST [1:0] $end
+$var wire 4 1 AWCACHE [3:0] $end
+$var wire 3 2 AWID [2:0] $end
+$var wire 8 3 AWLEN [7:0] $end
+$var wire 3 4 AWPROT [2:0] $end
+$var wire 4 5 AWQOS [3:0] $end
+$var wire 4 6 AWREGION [3:0] $end
+$var wire 3 7 AWSIZE [2:0] $end
+$var wire 2 8 AWUSER [1:0] $end
+$var wire 1 9 AWVALID $end
+$var wire 1 : BREADY $end
+$var wire 1 ; RREADY $end
+$var wire 8 < WDATA [7:0] $end
+$var wire 3 = WID [2:0] $end
+$var wire 1 > WLAST $end
+$var wire 1 ? WSTRB $end
+$var wire 2 @ WUSER [1:0] $end
+$var wire 1 A WVALID $end
+$var wire 8 B s0_dout [7:0] $end
+$var reg 1 C ARREADY $end
+$var reg 1 D AWREADY $end
+$var reg 32 E AxADDR [31:0] $end
+$var reg 2 F AxBURST [1:0] $end
+$var reg 3 G AxID [2:0] $end
+$var reg 8 H AxLEN [7:0] $end
+$var reg 3 I AxSIZE [2:0] $end
+$var reg 3 J BID [2:0] $end
+$var reg 2 K BRESP [1:0] $end
+$var reg 2 L BUSER [1:0] $end
+$var reg 1 M BVALID $end
+$var reg 8 N RDATA [7:0] $end
+$var reg 3 O RID [2:0] $end
+$var reg 1 P RLAST $end
+$var reg 2 Q RRESP [1:0] $end
+$var reg 2 R RUSER [1:0] $end
+$var reg 1 S RVALID $end
+$var reg 1 T WREADY $end
+$var reg 8 U counter [7:0] $end
+$var reg 2 V resp [1:0] $end
+$var reg 32 W s0_ADDR [31:0] $end
+$var reg 1 X s0_cs $end
+$var reg 8 Y s0_din [7:0] $end
+$var reg 1 Z s0_we $end
+$var reg 2 [ state_current [1:0] $end
+$var reg 2 \ state_next [1:0] $end
+$scope module s0 $end
+$var wire 1 ! clk $end
+$var wire 1 X cs $end
+$var wire 100 ] io_addr [99:0] $end
+$var wire 8 ^ io_din [7:0] $end
+$var wire 1 % rstn $end
+$var wire 1 Z we $end
+$var reg 8 _ io_dout [7:0] $end
+$var integer 32 ` i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx `
+bx _
+bx ^
+b0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ]
+b11 \
+b11 [
+0Z
+bx Y
+1X
+bx W
+bx V
+bx U
+xT
+1S
+b0 R
+bx Q
+xP
+bx O
+bx N
+xM
+bx L
+bx K
+bx J
+bx I
+bx H
+bx G
+bx F
+bx E
+xD
+0C
+bx B
+zA
+bz @
+z?
+z>
+bz =
+bz <
+z;
+z:
+z9
+bz 8
+bz 7
+bz 6
+bz 5
+bz 4
+bz 3
+bz 2
+bz 1
+bz 0
+bz /
+z.
+bz -
+bz ,
+bz +
+bz *
+bz )
+z(
+bz '
+bz &
+1%
+bz $
+bz #
+bz "
+1!
+$end
+#500
+b0 \
+b0 V
+b0 U
+0P
+b0 O
+b0 L
+b0 K
+b0 J
+0X
+0S
+1M
+0T
+0D
+b0 F
+b0 I
+b0 H
+b0 E
+b0 G
+b0 [
+b1100100 `
+0!
+0%
+#1000
+0M
+1%
+1!
+#1500
+0!
+#2000
+b1 2
+b0 /
+b1000 3
+b0 7
+b1 0
+19
+1!
+#2500
+0!
+#3000
+b1 \
+1D
+b1 F
+b1000 H
+b1 G
+1!
+#3500
+0!
+#4000
+b1 [
+1!
+#4500
+0!
+#5000
+09
+0D
+1!
+#5500
+0!
+#6000
+b1 =
+b11 <
+1A
+1!
+#6500
+0!
+#7000
+b1 E
+b1 U
+1T
+b11 Y
+b11 ^
+b0 ]
+b0 W
+1Z
+1X
+1!
+#7500
+0!
+#8000
+b10 E
+b10 U
+b1 ]
+b1 W
+1T
+b0 B
+b0 _
+1!
+#8500
+0!
+#9000
+b11 E
+b11 U
+b10 ]
+b10 W
+1T
+1!
+#9500
+0!
+#10000
+b101 <
+b100 E
+b100 U
+b11 ]
+b11 W
+1T
+1!
+#10500
+0!
+#11000
+b0 <
+b101 E
+b101 U
+b101 Y
+b101 ^
+b100 ]
+b100 W
+1T
+1!
+#11500
+0!
+#12000
+b10 <
+b110 E
+b110 U
+b0 Y
+b0 ^
+b101 ]
+b101 W
+1T
+1!
+#12500
+0!
+#13000
+b0 <
+b10 \
+b111 E
+b111 U
+b10 Y
+b10 ^
+b110 ]
+b110 W
+1T
+1!
+#13500
+0!
+#14000
+b11 <
+1>
+b1000 E
+b1000 U
+b0 Y
+b0 ^
+b111 ]
+b111 W
+1T
+b10 [
+1!
+#14500
+0!
+#15000
+b0 \
+0A
+0>
+1:
+1M
+b1 J
+b0 U
+0Z
+0X
+0T
+1!
+#15500
+0!
+#16000
+0:
+b0 [
+1!
+#16500
+0!
+#17000
+0M
+1!
+#17500
+0!
+#18000
+b1 &
+b0 "
+b1000 '
+b0 ,
+b1 #
+1.
+1!
+#18500
+0!
+#19000
+b11 \
+1C
+b0 E
+1!
+#19500
+0!
+#20000
+b11 [
+1!
+#20500
+0!
+#21000
+0.
+b1 U
+b1 E
+1S
+b0 Q
+b0 N
+b0 ]
+b0 W
+1X
+b1 O
+0C
+1!
+#21500
+0!
+#22000
+1;
+b10 U
+b10 E
+b1 ]
+b1 W
+b11 B
+b11 _
+1!
+#22500
+0!
+#23000
+b11 U
+b11 E
+b11 N
+b10 ]
+b10 W
+1!
+#23500
+0!
+#24000
+b100 U
+b100 E
+b11 ]
+b11 W
+1!
+#24500
+0!
+#25000
+b101 U
+b101 E
+b100 ]
+b100 W
+1!
+#25500
+0!
+#26000
+b110 U
+b110 E
+b101 ]
+b101 W
+b101 B
+b101 _
+1!
+#26500
+0!
+#27000
+1P
+b0 \
+b0 B
+b0 _
+b111 U
+b111 E
+b101 N
+b110 ]
+b110 W
+1!
+#27500
+0!
+#28000
+b1000 U
+b1000 E
+b0 N
+b111 ]
+b111 W
+b0 [
+b10 B
+b10 _
+1!
+#28500
+0!
+#29000
+b0 B
+b0 _
+b0 U
+0P
+0S
+0X
+1!
+#29500
+0!
+#30000
+1!
+#30500
+0!
+#31000
+1!
+#31001

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1652735894" />
+    <testcase name="axi_sram_test" classname="axi_sram_test" file="/home/zqc/桌面/workshop_cocotb/18_axi_sram/axi_sram_test.py" lineno="95" time="0.010211467742919922" sim_time_ns="31.001" ratio_time="3035.9004974083587" />
+  </testsuite>
+</testsuites>
