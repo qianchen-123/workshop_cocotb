@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653596506" />
+    <testcase name="streamReg_halfPipe_test" classname="streamReg_halfPipe_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/streamReg_halfPipe/streamReg_halfPipe_test.py" lineno="137" time="0.11771893501281738" sim_time_ns="811.501" ratio_time="6893.546904001831" />
+  </testsuite>
+</testsuites>

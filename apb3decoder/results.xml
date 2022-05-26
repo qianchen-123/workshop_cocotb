@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1648231959" />
-    <testcase name="test1" classname="Apb3Decoder_test" file="/home/zqc/桌面/workshop_cocotb/apb3decoder/Apb3Decoder_test.py" lineno="15" time="0.02526068687438965" sim_time_ns="100.001" ratio_time="3958.7601278326774" />
+    <property name="random_seed" value="1653431601" />
+    <testcase name="test1" classname="Apb3Decoder_test" file="/home/zqc/Desktop/workshop_cocotb/apb3decoder/Apb3Decoder_test.py" lineno="15" time="0.018555641174316406" sim_time_ns="100.001" ratio_time="5389.250582104128" />
   </testsuite>
 </testsuites>
