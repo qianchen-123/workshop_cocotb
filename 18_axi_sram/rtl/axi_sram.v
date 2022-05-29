@@ -181,6 +181,8 @@ always @(*) begin
         IDLE : begin
                 if(AWVALID && AWREADY)
                     state_next = W_DATA;
+
+                    
                 else if(ARVALID & ARREADY)
                     state_next = R_DATA;
                 else
@@ -259,7 +261,7 @@ always @(posedge ACLK or negedge ARESETn) begin
         BID <= 'b0;
         BRESP <= 'b0;
         BUSER <= 'b0;
-        BVALID <= 'b1;
+        BVALID <= 'b0;
 
         RID <= 1'b0;
         RVALID <= 1'b0;

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653640102" />
+    <testcase name="streamArbiterRoundRobin_test" classname="streamArbiterRoundRobin_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/roundRobin/streamArbiterRoundRobin_test.py" lineno="303" time="0.09197044372558594" sim_time_ns="429.001" ratio_time="4664.552900060142" />
+  </testsuite>
+</testsuites>

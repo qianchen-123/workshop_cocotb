@@ -1,17 +1,51 @@
 # Author : Qianchen ZHANG
 # Date : 26/05/2022
-# function : basicStream_test
+# function : streamFIFOCC_test
 
 
-# note : first transaction payload must be 0
+# note : 1.first transaction payload must be 0
+# 2. total transaction == transaction_time + 1
 
+import logging
 import random
 import math
 
 
 import cocotb
 from cocotb.triggers import RisingEdge, Timer
-from cocotb.result import TestFailure
+from cocotb.result import TestFailure,TestSuccess
+
+from logging.handlers import RotatingFileHandler
+from cocotb.log import SimLogFormatter
+
+
+#--- clk  ---#
+# period = 1ns
+async def gen_s_clk(dut):
+    dut.io_s_clk.value = 0
+    dut.io_s_rst.value = 1
+
+    await Timer(1000)
+    dut.io_s_rst.value = 0
+
+    while True:
+        await Timer(500)
+        dut.io_s_clk.value = 1
+        await Timer(500)
+        dut.io_s_clk.value = 0
+
+async def gen_m_clk(dut):
+    dut.io_m_clk.value = 0
+    dut.io_m_rst.value = 1
+
+    await Timer(1000)
+    dut.io_m_rst.value = 0
+
+    while True:
+        await Timer(600)
+        dut.io_m_clk.value = 1
+        await Timer(600)
+        dut.io_m_clk.value = 0
 
 
 #--- initial all signal ---#
@@ -31,7 +65,7 @@ async def m_bhv_sim(dut,transaction_time):
     transaction_counter = 0
 
     while transaction_counter < transaction_time:
-        await Timer(500)
+        await RisingEdge(dut.io_s_clk)
         if begin == False:
             if dut.io_s_in_valid.value == 1:
                 begin = True
@@ -61,7 +95,7 @@ async def s_bhv_sim(dut):
     r = 0
 
     while True:
-        await Timer(500)
+        await RisingEdge(dut.io_m_clk)
         if r == 0 :
             r = random.randint(0,1)
         else :
@@ -76,34 +110,48 @@ async def s_bhv_sim(dut):
 #2. record m port handshake statue and payload 
 #3. when s port handshake satisfied and m port handshake satisfied, compare their payloads
 #4. when not equal, rising test filure message 
-async def scoreboard(dut):
-    s_payload_value = dut.io_s_in_payload.value
-    m_payload_value = dut.io_m_out_payload.value
 
-    s_fire_mark = False
-    m_fire_mark = False
+async def scoreboard(dut,transaction_time):
+    s_payload_list = []
+    m_payload_list = []
+    cocotb.start_soon(record_s(dut,transaction_time,s_payload_list))
+    await record_m(dut,transaction_time,m_payload_list)
+    print("scoreboard task info: all transaction finish")
+    assert s_payload_list == m_payload_list, "input and output payload missmatch!"
 
-    while True:
-        await Timer(500)
+
+async def record_s(dut,transaction_time,s_payload_list):
+
+    while not (len(s_payload_list) == transaction_time+1):
+        await RisingEdge(dut.io_s_clk)
+
         if Sfire(dut):
-            s_fire_mark = True
-            s_payload_value = dut.io_s_in_payload.value
+            s_payload_list.append(dut.io_s_in_payload.value)
+
+    assert len(s_payload_list)  == transaction_time+1 , "slave port transaction not finish"
+    print("record S task info: slave port all transaction finish.")
+    # assert s_payload_list == m_payload_list, "input and output payload missmatch!"
+
+
+async def record_m(dut,transaction_time,m_payload_list):
+    while not (len(m_payload_list) == transaction_time+1):
+        await RisingEdge(dut.io_m_clk)
 
         if Mfire(dut):
-            m_fire_mark = True
-            m_payload_value = dut.io_m_out_payload.value
+            m_payload_list.append(dut.io_m_out_payload.value)
 
-        if s_fire_mark and m_fire_mark :
-            assert s_payload_value == m_payload_value, "input and output payload missmatch"
-            if s_payload_value == m_payload_value :
-                s_payload_value = 0
-                m_payload_value = 0
-                s_fire_mark = False
-                m_fire_mark = False
-            else :
-                TestFailure("input and output payload missmatch!")
+    assert len(m_payload_list) == transaction_time+1 , "master port transaction not finish"
+    print("record M task info: master port all transaction finish.")
+    # assert s_payload_list == m_payload_list, "input and output payload missmatch!"
+
+
+
+
 
         
+
+
+
 
 
 #--- Slave port handshake ---#
@@ -116,21 +164,20 @@ def Mfire(dut):
 
 
 
-
-
-
 @cocotb.test()
-async def basicStream_test(dut):
-
+async def streamFIFOCC_test(dut):
+    
     transaction_time = random.randint(200,500) # random number of transactions
-
+    cocotb.start_soon(gen_s_clk(dut))
+    cocotb.start_soon(gen_m_clk(dut))
+    await Timer(1000)
     cocotb.start_soon(init_input_signal(dut)) # initial all input signals
-    await Timer(500)
+    await Timer(2000)    
     cocotb.start_soon(s_bhv_sim(dut))
-    cocotb.start_soon(scoreboard(dut))
-    await m_bhv_sim(dut,transaction_time)
+    cocotb.start_soon(m_bhv_sim(dut,transaction_time))
+    await scoreboard(dut,transaction_time)
 
-    # await Timer(500 * transaction_time)
+    
 
 
     

@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653640003" />
+    <testcase name="streamArbiterRoundRobin_test" classname="streamArbiterSequencialOrder_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/sequencialOrder/streamArbiterSequencialOrder_test.py" lineno="303" time="0.05033588409423828" sim_time_ns="231.001" ratio_time="4589.1912729201795" />
+  </testsuite>
+</testsuites>

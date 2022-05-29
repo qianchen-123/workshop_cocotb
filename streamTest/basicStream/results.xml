@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1653580456" />
-    <testcase name="basicStream_test" classname="basicStream_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/basicStream/basicStream_test.py" lineno="121" time="0.1101987361907959" sim_time_ns="678.001" ratio_time="6152.529724352941" />
+    <property name="random_seed" value="1653644790" />
+    <testcase name="basicStream_test" classname="basicStream_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/basicStream/basicStream_test.py" lineno="122" time="0.13201069831848145" sim_time_ns="783.501" ratio_time="5935.132606523832" />
   </testsuite>
 </testsuites>

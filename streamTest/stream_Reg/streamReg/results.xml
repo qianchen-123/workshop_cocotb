@@ -1,0 +1,8 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653644608" />
+    <testcase name="streamReg_test" classname="streamReg_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/stream_Reg/streamReg/streamReg_test.py" lineno="138" time="0.0027647018432617188" sim_time_ns="15.501" ratio_time="5606.752872024836">
+      <failure />
+    </testcase>
+  </testsuite>
+</testsuites>

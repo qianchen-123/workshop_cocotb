@@ -1,6 +1,0 @@
-<testsuites name="results">
-  <testsuite name="all" package="all">
-    <property name="random_seed" value="1653600146" />
-    <testcase name="streamArbiter_1_test" classname="streamArbiter_1_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/streamArbiter_1_test.py" lineno="303" time="0.11104941368103027" sim_time_ns="486.001" ratio_time="4376.43913542805" />
-  </testsuite>
-</testsuites>

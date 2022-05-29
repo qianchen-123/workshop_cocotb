@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653640110" />
+    <testcase name="streamArbiterLowerFirst_test" classname="streamArbiterLowerFirst_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/lowerFirst/streamArbiterLowerFirst_test.py" lineno="303" time="0.06340575218200684" sim_time_ns="266.001" ratio_time="4195.2187435051865" />
+  </testsuite>
+</testsuites>

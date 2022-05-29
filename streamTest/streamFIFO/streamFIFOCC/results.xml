@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1653659215" />
+    <testcase name="streamFIFOCC_test" classname="streamFIFOCC_test" file="/home/zqc/Desktop/workshop_cocotb/streamTest/streamFIFO/streamFIFOCC/streamFIFOCC_test.py" lineno="167" time="0.2179126739501953" sim_time_ns="984.401" ratio_time="4517.410493641082" />
+  </testsuite>
+</testsuites>
