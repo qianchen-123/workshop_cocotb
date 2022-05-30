@@ -1,5 +1,5 @@
 $date
-	Sun May 29 15:01:53 2022
+	Mon May 30 03:27:37 2022
 $end
 $version
 	Icarus Verilog
@@ -8,115 +8,111 @@ $timescale
 	1ps
 $end
 $scope module axi_slave $end
-$var wire 1 ! clk $end
-$var wire 1 " fsm_wantExit $end
-$var wire 1 # fsm_wantKill $end
-$var wire 1 $ io_axi_in_ar_fire $end
-$var wire 32 % io_axi_in_ar_payload_addr [31:0] $end
-$var wire 2 & io_axi_in_ar_payload_burst [1:0] $end
-$var wire 4 ' io_axi_in_ar_payload_cache [3:0] $end
-$var wire 4 ( io_axi_in_ar_payload_id [3:0] $end
-$var wire 8 ) io_axi_in_ar_payload_len [7:0] $end
-$var wire 1 * io_axi_in_ar_payload_lock $end
-$var wire 3 + io_axi_in_ar_payload_prot [2:0] $end
-$var wire 4 , io_axi_in_ar_payload_qos [3:0] $end
-$var wire 4 - io_axi_in_ar_payload_region [3:0] $end
-$var wire 3 . io_axi_in_ar_payload_size [2:0] $end
-$var wire 1 / io_axi_in_ar_valid $end
-$var wire 1 0 io_axi_in_aw_fire $end
-$var wire 32 1 io_axi_in_aw_payload_addr [31:0] $end
-$var wire 2 2 io_axi_in_aw_payload_burst [1:0] $end
-$var wire 4 3 io_axi_in_aw_payload_cache [3:0] $end
-$var wire 4 4 io_axi_in_aw_payload_id [3:0] $end
-$var wire 8 5 io_axi_in_aw_payload_len [7:0] $end
-$var wire 1 6 io_axi_in_aw_payload_lock $end
-$var wire 3 7 io_axi_in_aw_payload_prot [2:0] $end
-$var wire 4 8 io_axi_in_aw_payload_qos [3:0] $end
-$var wire 4 9 io_axi_in_aw_payload_region [3:0] $end
-$var wire 3 : io_axi_in_aw_payload_size [2:0] $end
-$var wire 1 ; io_axi_in_aw_valid $end
-$var wire 1 < io_axi_in_b_fire $end
-$var wire 1 = io_axi_in_b_ready $end
-$var wire 1 > io_axi_in_r_fire $end
-$var wire 1 ? io_axi_in_r_ready $end
-$var wire 1 @ io_axi_in_w_fire $end
-$var wire 32 A io_axi_in_w_payload_data [31:0] $end
-$var wire 1 B io_axi_in_w_payload_last $end
-$var wire 4 C io_axi_in_w_payload_strb [3:0] $end
-$var wire 1 D io_axi_in_w_valid $end
-$var wire 1 E reset $end
-$var wire 4 F user [3:0] $end
-$var wire 1 G when_axi_slave_l64 $end
-$var wire 1 H axiCfgReg_almostFull $end
-$var wire 12 I _zz_mem1_port [11:0] $end
-$var wire 12 J _zz_io_axi_in_r_payload_data_1 [11:0] $end
-$var wire 12 K _zz_io_axi_in_r_payload_data [11:0] $end
-$var wire 8 L _zz_axiCfgReg_full [7:0] $end
-$var wire 8 M _zz_axiCfgReg_almostFull_1 [7:0] $end
-$var wire 8 N _zz_axiCfgReg_almostFull [7:0] $end
-$var wire 8 O _zz_axiCfgReg_AxADDR_5 [7:0] $end
-$var wire 32 P _zz_axiCfgReg_AxADDR_4 [31:0] $end
+$var wire 32 ! _zz_mem1_port1 [31:0] $end
+$var wire 1 " _zz_mem1_port_1 $end
+$var wire 1 # _zz_mem2_port_1 $end
+$var wire 1 $ clk $end
+$var wire 1 % fsm_wantExit $end
+$var wire 1 & fsm_wantKill $end
+$var wire 1 ' io_axi_in_ar_fire $end
+$var wire 32 ( io_axi_in_ar_payload_addr [31:0] $end
+$var wire 2 ) io_axi_in_ar_payload_burst [1:0] $end
+$var wire 4 * io_axi_in_ar_payload_cache [3:0] $end
+$var wire 4 + io_axi_in_ar_payload_id [3:0] $end
+$var wire 8 , io_axi_in_ar_payload_len [7:0] $end
+$var wire 1 - io_axi_in_ar_payload_lock $end
+$var wire 3 . io_axi_in_ar_payload_prot [2:0] $end
+$var wire 4 / io_axi_in_ar_payload_qos [3:0] $end
+$var wire 4 0 io_axi_in_ar_payload_region [3:0] $end
+$var wire 3 1 io_axi_in_ar_payload_size [2:0] $end
+$var wire 1 2 io_axi_in_ar_valid $end
+$var wire 1 3 io_axi_in_aw_fire $end
+$var wire 32 4 io_axi_in_aw_payload_addr [31:0] $end
+$var wire 2 5 io_axi_in_aw_payload_burst [1:0] $end
+$var wire 4 6 io_axi_in_aw_payload_cache [3:0] $end
+$var wire 4 7 io_axi_in_aw_payload_id [3:0] $end
+$var wire 8 8 io_axi_in_aw_payload_len [7:0] $end
+$var wire 1 9 io_axi_in_aw_payload_lock $end
+$var wire 3 : io_axi_in_aw_payload_prot [2:0] $end
+$var wire 4 ; io_axi_in_aw_payload_qos [3:0] $end
+$var wire 4 < io_axi_in_aw_payload_region [3:0] $end
+$var wire 3 = io_axi_in_aw_payload_size [2:0] $end
+$var wire 1 > io_axi_in_aw_valid $end
+$var wire 1 ? io_axi_in_b_fire $end
+$var wire 1 @ io_axi_in_b_ready $end
+$var wire 1 A io_axi_in_r_fire $end
+$var wire 1 B io_axi_in_r_ready $end
+$var wire 1 C io_axi_in_w_fire $end
+$var wire 1 D io_axi_in_w_fire_1 $end
+$var wire 1 E io_axi_in_w_fire_2 $end
+$var wire 32 F io_axi_in_w_payload_data [31:0] $end
+$var wire 1 G io_axi_in_w_payload_last $end
+$var wire 4 H io_axi_in_w_payload_strb [3:0] $end
+$var wire 1 I io_axi_in_w_valid $end
+$var wire 1 J reset $end
+$var wire 4 K user [3:0] $end
+$var wire 1 L when_axi_slave_l64 $end
+$var wire 12 M _zz_mem2_port [11:0] $end
+$var wire 12 N _zz_mem1_port [11:0] $end
+$var wire 12 O _zz_io_axi_in_r_payload_data [11:0] $end
+$var wire 8 P _zz_axiCfgReg_full [7:0] $end
 $var wire 8 Q _zz_axiCfgReg_AxADDR_3 [7:0] $end
 $var wire 32 R _zz_axiCfgReg_AxADDR_2 [31:0] $end
 $var wire 8 S _zz_axiCfgReg_AxADDR_1 [7:0] $end
 $var wire 32 T _zz_axiCfgReg_AxADDR [31:0] $end
-$var reg 32 U _zz_mem1_port1 [31:0] $end
-$var reg 32 V _zz_mem1_port2 [31:0] $end
-$var reg 32 W axiCfgReg_AxADDR [31:0] $end
-$var reg 2 X axiCfgReg_AxBURST [1:0] $end
-$var reg 4 Y axiCfgReg_AxID [3:0] $end
-$var reg 8 Z axiCfgReg_AxLEN [7:0] $end
-$var reg 3 [ axiCfgReg_AxSIZE [2:0] $end
-$var reg 1 \ axiCfgReg_begin $end
-$var reg 4 ] axiCfgReg_counter [3:0] $end
-$var reg 1 ^ axiCfgReg_full $end
-$var reg 1 _ axiCfgReg_in_burst_trans $end
-$var reg 3 ` fsm_stateNext [2:0] $end
-$var reg 48 a fsm_stateNext_string [47:0] $end
-$var reg 3 b fsm_stateReg [2:0] $end
-$var reg 48 c fsm_stateReg_string [47:0] $end
-$var reg 1 d fsm_wantStart $end
-$var reg 1 e io_axi_in_ar_ready $end
-$var reg 1 f io_axi_in_aw_ready $end
-$var reg 4 g io_axi_in_b_payload_id [3:0] $end
-$var reg 2 h io_axi_in_b_payload_resp [1:0] $end
-$var reg 4 i io_axi_in_b_payload_user [3:0] $end
-$var reg 1 j io_axi_in_b_valid $end
-$var reg 32 k io_axi_in_r_payload_data [31:0] $end
-$var reg 4 l io_axi_in_r_payload_id [3:0] $end
-$var reg 1 m io_axi_in_r_payload_last $end
-$var reg 2 n io_axi_in_r_payload_resp [1:0] $end
-$var reg 4 o io_axi_in_r_payload_user [3:0] $end
-$var reg 1 p io_axi_in_r_valid $end
-$var reg 1 q io_axi_in_w_ready $end
+$var reg 32 U axiCfgReg_AxADDR [31:0] $end
+$var reg 2 V axiCfgReg_AxBURST [1:0] $end
+$var reg 4 W axiCfgReg_AxID [3:0] $end
+$var reg 8 X axiCfgReg_AxLEN [7:0] $end
+$var reg 3 Y axiCfgReg_AxSIZE [2:0] $end
+$var reg 1 Z axiCfgReg_begin $end
+$var reg 4 [ axiCfgReg_counter [3:0] $end
+$var reg 1 \ axiCfgReg_full $end
+$var reg 1 ] axiCfgReg_in_burst_trans $end
+$var reg 3 ^ fsm_stateNext [2:0] $end
+$var reg 48 _ fsm_stateNext_string [47:0] $end
+$var reg 3 ` fsm_stateReg [2:0] $end
+$var reg 48 a fsm_stateReg_string [47:0] $end
+$var reg 1 b fsm_wantStart $end
+$var reg 1 c io_axi_in_ar_ready $end
+$var reg 1 d io_axi_in_aw_ready $end
+$var reg 4 e io_axi_in_b_payload_id [3:0] $end
+$var reg 2 f io_axi_in_b_payload_resp [1:0] $end
+$var reg 4 g io_axi_in_b_payload_user [3:0] $end
+$var reg 1 h io_axi_in_b_valid $end
+$var reg 32 i io_axi_in_r_payload_data [31:0] $end
+$var reg 4 j io_axi_in_r_payload_id [3:0] $end
+$var reg 1 k io_axi_in_r_payload_last $end
+$var reg 2 l io_axi_in_r_payload_resp [1:0] $end
+$var reg 4 m io_axi_in_r_payload_user [3:0] $end
+$var reg 1 n io_axi_in_r_valid $end
+$var reg 1 o io_axi_in_w_ready $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-0q
-xp
-b0 o
-bx n
-xm
+0o
+xn
+b0 m
 bx l
-bx k
-xj
-b0 i
-bx h
-bx g
-xf
-xe
+xk
+bx j
+bx i
+xh
+b0 g
+bx f
+bx e
 xd
-bx c
-bx b
+xc
+xb
 bx a
 bx `
-0_
-x^
-bx ]
+bx _
+bx ^
+0]
 x\
 bx [
-bx Z
+xZ
 bx Y
 bx X
 bx W
@@ -126,480 +122,459 @@ b0xxxxxxxx T
 bx S
 b0xxxxxxxx R
 bx Q
-b0xxxxxxxx P
+b0xxxx P
 bx O
-b0xxxx N
+bx N
 bx M
-b0xxxx L
-bx K
-bx J
-bx I
-xH
-xG
-b0 F
+xL
+b0 K
+0J
+zI
+bz H
+zG
+bz F
 0E
-zD
-bz C
+0D
+0C
 zB
-bz A
-0@
-z?
-x>
-z=
-x<
-z;
+xA
+z@
+x?
+z>
+bz =
+bz <
+bz ;
 bz :
-bz 9
+z9
 bz 8
 bz 7
-z6
+bz 6
 bz 5
 bz 4
-bz 3
-bz 2
+x3
+z2
 bz 1
-x0
-z/
+bz 0
+bz /
 bz .
-bz -
+z-
 bz ,
 bz +
-z*
+bz *
 bz )
 bz (
-bz '
-bz &
-bz %
-x$
+x'
+0&
+0%
+1$
 0#
 0"
-1!
+bx !
 $end
 #500
-b10010010100010001001100010001010010000000100000 a
-0$
-0<
-00
-0>
-b1 `
-1d
-b0 n
-0e
-b0 h
-0j
-0f
-b10000100100111101001111010101000010000000100000 c
-0m
-b0 k
-0p
-0G
-1^
-b0 I
-b0 K
-b0 J
+b10010010100010001001100010001010010000000100000 _
+0A
+0'
+0?
+03
+b1 ^
+1b
 b0 l
-b0 g
-b0 b
-0\
-b0 L
+0n
+0c
+b0 f
+0h
+0d
+b10000100100111101001111010101000010000000100000 a
+0k
+b0 i
+0L
+1\
 b0 N
-b0 ]
-b0 X
+b0 M
+b0 O
+b0 j
+b0 e
+b0 `
+0Z
+b0 P
+b0 [
+b0 V
 b1 T
 b1 S
 b1 R
 b1 Q
-b1 P
-b1 O
-b0 [
-0H
-b11111111 M
-b0 Z
-b0 W
 b0 Y
-0!
-1E
-#1000
-b10010010100010001001100010001010010000000100000 c
-0d
-0^
-b1 b
-0E
-1!
-#1500
-0!
-#2000
-b10101110101111101000001010001000100010001010010 a
-b10 `
-b1 4
-b0 1
-b1000 5
-b0 :
-b1 2
-1;
-1!
-#2500
-0!
-#3000
-b10101110101111101000100010000010101010001000001 a
-b11 `
-10
-1f
-b10101110101111101000001010001000100010001010010 c
-0^
-b10 b
-1!
-#3500
-0!
-#4000
-00
-1G
-b10101110101111101000100010000010101010001000001 c
-0f
-1\
-b1 L
-b1 N
-b1 ]
-b1 X
-b111 M
-b1000 Z
-b1 Y
-b11 b
-1!
-#4500
-0!
-#5000
-0;
-1!
-#5500
-0!
-#6000
-1@
-1q
-1_
-b100 A
-1D
-1!
-#6500
-0!
-#7000
-b1 I
-b1 K
-b1 J
-b10 L
-b10 N
-b10 ]
-b1 W
-1!
-#7500
-0!
-#8000
-b1 A
-b10 I
-b10 K
-b10 J
-b11 L
-b11 N
-b11 ]
-b10 W
-1!
-#8500
-0!
-#9000
-b11 I
-b11 K
-b11 J
-b100 L
-b100 N
-b100 ]
-b11 W
-1!
-#9500
-0!
-#10000
-b100 A
-b100 I
-b100 K
-b100 J
-b101 L
-b101 N
-b101 ]
-b100 W
-1!
-#10500
-0!
-#11000
-b11 A
-b101 I
-b101 K
-b101 J
-b110 L
-b110 N
-b110 ]
-b101 W
-1!
-#11500
-0!
-#12000
-b10 A
-b110 I
-b110 K
-b110 J
-b111 L
-1H
-b111 N
-b111 ]
-b110 W
-1!
-#12500
-0!
-#13000
-1B
-b10101110101111101010010010100110101000000100000 a
-b100 `
-0_
-0G
-1^
-b111 I
-b111 K
-b111 J
-b1000 L
-0H
-b1000 N
-b1000 ]
-b111 W
-1!
-#13500
-0!
-#14000
-b10010010100010001001100010001010010000000100000 a
-b1 `
-0D
-0B
-1=
-1<
-0@
-1j
-b10101110101111101010010010100110101000000100000 c
-b1 g
-0q
-b100 b
-1!
-#14500
-0!
-#15000
-0=
-0<
-1G
-b10010010100010001001100010001010010000000100000 c
-0j
-b0 g
-0^
-b1 b
-1!
-#15500
-0!
-#16000
-b10100100101111101000001010001000100010001010010 a
-b101 `
-b1 (
-b0 %
-b1000 )
-b0 .
-b1 &
-1/
-0G
-0^
-b0 I
-b0 K
-b0 J
-0\
-b0 L
-b0 N
-b0 ]
 b0 X
-b11111111 M
-b0 Z
+b0 U
 b0 W
-b0 Y
-1!
-#16500
-0!
-#17000
-b10100100101111101000100010000010101010001000001 a
-x>
-b110 `
-bx k
-1p
-1$
-1e
-b10100100101111101000001010001000100010001010010 c
-0^
-1_
-b101 b
-1!
-#17500
-0!
-#18000
-1>
-0/
-1?
 0$
-1G
-b1 I
-b1 K
-b1 J
-b10100100101111101000100010000010101010001000001 c
-0e
-b1 l
-1p
-1_
-b100 k
-1\
-b1 L
-b1 N
-b1 ]
-b1 X
-b111 M
-b1000 Z
-b1 W
-b1 Y
-b110 b
-b100 U
-b100 V
-1!
-#18500
-0!
-#19000
-b10 I
-b10 K
-b10 J
-b10 L
-b10 N
-b10 ]
-b10 W
-1!
-#19500
-0!
-#20000
-b11 I
-b11 K
-b11 J
-b1 k
-b11 L
-b11 N
-b11 ]
-b11 W
-b1 U
-b1 V
-1!
-#20500
-0!
-#21000
-b100 I
-b100 K
-b100 J
-b100 L
-b100 N
-b100 ]
-b100 W
-1!
-#21500
-0!
-#22000
-b101 I
-b101 K
-b101 J
-b100 k
-b101 L
-b101 N
-b101 ]
-b101 W
-b100 U
-b100 V
-1!
-#22500
-0!
-#23000
-b110 I
-b110 K
-b110 J
-b11 k
-b110 L
-b110 N
-b110 ]
-b110 W
-b11 V
-b11 U
-1!
-#23500
-0!
-#24000
-b111 I
-b111 K
-b111 J
-b10 k
-b111 L
-1H
-b111 N
-b111 ]
-b111 W
-b10 U
-b10 V
-1!
-#24500
-0!
-#25000
+1J
+#1000
 b10010010100010001001100010001010010000000100000 a
-b1 `
-1m
-0_
-0G
-1^
-b1000 I
-b1000 K
-b1000 J
-b1000 L
-0H
-b1000 N
-b1000 ]
-b1000 W
-1!
-#25500
-0!
-#26000
-0>
-1G
-b10010010100010001001100010001010010000000100000 c
-0m
-b0 l
-0p
-0^
-b0 k
-b1 b
-bx U
-bx V
-1!
-#26500
-0!
-#27000
-0G
-0^
-b0 I
-b0 K
-b0 J
+0b
 0\
-b0 L
+b1 `
+0J
+1$
+#1500
+0$
+#2000
+b10101110101111101000001010001000100010001010010 _
+b10 ^
+b1 7
+b0 4
+b1000 8
+b0 =
+b1 5
+1>
+1$
+#2500
+0$
+#3000
+b10101110101111101000100010000010101010001000001 _
+b11 ^
+13
+1d
+b10101110101111101000001010001000100010001010010 a
+0\
+b10 `
+1$
+#3500
+0$
+#4000
+03
+1L
+b10101110101111101000100010000010101010001000001 a
+0d
+1Z
+b1 P
+b1 [
+b1 V
+b1000 X
+b1 W
+b11 `
+1$
+#4500
+0$
+#5000
+0>
+1$
+#5500
+0$
+#6000
+1"
+1C
+1D
+1E
+1o
+1]
+b101 F
+1I
+1$
+#6500
+0$
+#7000
+b1 N
+b1 M
+b1 O
+b10 P
+b10 [
+b1 U
+bx !
+1$
+#7500
+0$
+#8000
+b10 F
+b10 N
+b10 M
+b10 O
+b11 P
+b11 [
+b10 U
+bx !
+1$
+#8500
+0$
+#9000
+b11 N
+b11 M
+b11 O
+b100 P
+b100 [
+b11 U
+bx !
+1$
+#9500
+0$
+#10000
+b11 F
+b100 N
+b100 M
+b100 O
+b101 P
+b101 [
+b100 U
+bx !
+1$
+#10500
+0$
+#11000
+b10 F
+b101 N
+b101 M
+b101 O
+b110 P
+b110 [
+b101 U
+bx !
+1$
+#11500
+0$
+#12000
+b100 F
+b110 N
+b110 M
+b110 O
+b111 P
+b111 [
+b110 U
+bx !
+1$
+#12500
+0$
+#13000
+b11 F
+1G
+b10101110101111101010010010100110101000000100000 _
+b100 ^
+0]
+0L
+1\
+b111 N
+b111 M
+b111 O
+b1000 P
+b1000 [
+b111 U
+bx !
+1$
+#13500
+0$
+#14000
+b10010010100010001001100010001010010000000100000 _
+b1 ^
+0I
+0G
+1@
+0"
+1?
+0E
+0D
+0C
+1h
+b10101110101111101010010010100110101000000100000 a
+b1 e
+0o
+b100 `
+b11 !
+1$
+#14500
+0$
+#15000
+0@
+0?
+1L
+b10010010100010001001100010001010010000000100000 a
+0h
+b0 e
+0\
+b1 `
+1$
+#15500
+0$
+#16000
+b10100100101111101000001010001000100010001010010 _
+b101 ^
+b1 +
+b0 (
+b1000 ,
+b0 1
+b1 )
+12
+0L
+0\
 b0 N
-b0 ]
+b0 M
+b101 !
+b0 O
+0Z
+b0 P
+b0 [
+b0 V
 b0 X
-b11111111 M
-b0 Z
+b0 U
 b0 W
-b0 Y
-1!
+1$
+#16500
+0$
+#17000
+b10100100101111101000100010000010101010001000001 _
+b110 ^
+1'
+1c
+b10100100101111101000001010001000100010001010010 a
+0\
+1]
+b101 `
+1$
+#17500
+0$
+#18000
+02
+0'
+xA
+1L
+b10100100101111101000100010000010101010001000001 a
+0c
+1n
+b1 j
+b101 i
+0]
+1Z
+b1 P
+b1 [
+b1 V
+b1000 X
+b1 W
+b110 `
+1$
+#18500
+0$
+#19000
+1]
+1A
+1B
+1$
+#19500
+0$
+#20000
+b1 N
+b1 M
+b1 O
+b10 P
+b10 [
+b1 U
+1$
+#20500
+0$
+#21000
+b10 i
+b10 N
+b10 M
+b10 !
+b10 O
+b11 P
+b11 [
+b10 U
+1$
+#21500
+0$
+#22000
+b11 N
+b11 M
+b11 O
+b100 P
+b100 [
+b11 U
+1$
+#22500
+0$
+#23000
+b11 i
+b100 N
+b100 M
+b11 !
+b100 O
+b101 P
+b101 [
+b100 U
+1$
+#23500
+0$
+#24000
+b10 i
+b101 N
+b101 M
+b10 !
+b101 O
+b110 P
+b110 [
+b101 U
+1$
+#24500
+0$
+#25000
+b100 i
+b110 N
+b110 M
+b100 !
+b110 O
+b111 P
+b111 [
+b110 U
+1$
+#25500
+0$
+#26000
+b10010010100010001001100010001010010000000100000 _
+b1 ^
+1k
+0]
+0L
+b11 i
+1\
+b111 N
+b111 M
+b11 !
+b111 O
+b1000 P
+b1000 [
+b111 U
+1$
+#26500
+0$
+#27000
+0A
+1L
+0n
+b10010010100010001001100010001010010000000100000 a
+0k
+b0 j
+b0 i
+0\
+b1 `
+1$
 #27500
-0!
+0$
 #28000
-1!
-#28001
+0L
+0\
+b0 N
+b0 M
+b101 !
+b0 O
+0Z
+b0 P
+b0 [
+b0 V
+b0 X
+b0 U
+b0 W
+1$
+#28500
+0$
+#29000
+1$
+#29001

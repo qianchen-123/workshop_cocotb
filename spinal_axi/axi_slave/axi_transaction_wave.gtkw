@@ -1,0 +1,114 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May 30 10:41:26 2022
+[*]
+[dumpfile] "/home/zqc/Desktop/workshop_cocotb/spinal_axi/axi_slave/axi_slave_test.vcd"
+[dumpfile_mtime] "Mon May 30 10:27:37 2022"
+[dumpfile_size] 6735
+[savefile] "/home/zqc/Desktop/axi_transaction_wave.gtkw"
+[timestart] 0
+[size] 3438 1154
+[pos] -46 -46
+*-12.000000 24220 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 418
+[signals_width] 401
+[sst_expanded] 1
+[sst_vpaned_height] 337
+@28
+axi_slave.clk
+@29
+axi_slave.reset
+@820
+axi_slave.fsm_stateReg_string[47:0]
+axi_slave.fsm_stateNext_string[47:0]
+@200
+--------- AXI AW CHANNEL --------
+@28
+[color] 2
+axi_slave.io_axi_in_aw_fire
+[color] 2
+axi_slave.io_axi_in_aw_valid
+[color] 2
+axi_slave.io_axi_in_aw_ready
+@22
+[color] 2
+axi_slave.io_axi_in_aw_payload_addr[31:0]
+@28
+[color] 2
+axi_slave.io_axi_in_aw_payload_burst[1:0]
+@22
+[color] 2
+axi_slave.io_axi_in_aw_payload_id[3:0]
+@28
+[color] 2
+axi_slave.io_axi_in_aw_payload_size[2:0]
+@200
+--------- AXI W CHANNEL --------
+@28
+[color] 3
+axi_slave.io_axi_in_w_fire
+[color] 3
+axi_slave.io_axi_in_w_valid
+[color] 3
+axi_slave.io_axi_in_w_ready
+@24
+[color] 3
+axi_slave.io_axi_in_w_payload_data[31:0]
+@28
+[color] 3
+axi_slave.io_axi_in_w_payload_last
+@200
+--------- AXI W RSP CHANNEL --------
+@28
+[color] 4
+axi_slave.io_axi_in_b_fire
+[color] 4
+axi_slave.io_axi_in_b_valid
+[color] 4
+axi_slave.io_axi_in_b_ready
+@200
+--------- AXI AR CHANNEL --------
+@28
+[color] 5
+axi_slave.io_axi_in_ar_fire
+[color] 5
+axi_slave.io_axi_in_ar_valid
+[color] 5
+axi_slave.io_axi_in_ar_ready
+@22
+[color] 6
+axi_slave.io_axi_in_ar_payload_addr[31:0]
+@28
+[color] 6
+axi_slave.io_axi_in_ar_payload_burst[1:0]
+@22
+[color] 6
+axi_slave.io_axi_in_ar_payload_id[3:0]
+[color] 6
+axi_slave.io_axi_in_ar_payload_len[7:0]
+@28
+[color] 6
+axi_slave.io_axi_in_ar_payload_size[2:0]
+@200
+--------- AXI R CHANNEL --------
+@28
+[color] 7
+axi_slave.io_axi_in_r_fire
+[color] 7
+axi_slave.io_axi_in_r_valid
+[color] 7
+axi_slave.io_axi_in_r_ready
+@24
+[color] 7
+axi_slave.io_axi_in_r_payload_data[31:0]
+@28
+[color] 7
+axi_slave.io_axi_in_r_payload_last
+@200
+--------- AXI CFG REG SIGNAL --------
+@22
+axi_slave.axiCfgReg_counter[3:0]
+@24
+axi_slave.axiCfgReg_AxADDR[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

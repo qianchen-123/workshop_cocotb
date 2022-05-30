@@ -80,6 +80,7 @@ async def gen_burst_read_transaction(dut,Burst_len):
         dut.io_axi_in_ar_payload_burst.value = 1
         dut.io_axi_in_ar_valid.value = 1
         await RisingEdge(dut.clk)
+        
 
     # await RisingEdge(dut.clk)
     dut.io_axi_in_ar_valid.value = 0
