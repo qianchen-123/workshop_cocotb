@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May 30 20:54:06 2022
+[*]
+[dumpfile] "/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/lowerFirst/streamArbiterLowerFirst_test.vcd"
+[dumpfile_mtime] "Fri May 27 08:28:30 2022"
+[dumpfile_size] 56895
+[savefile] "/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/lowerFirst/streamArbiterLowerFirst.gtkw"
+[timestart] 0
+[size] 3438 1154
+[pos] -51 -51
+*-13.000000 14090 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 341
+[sst_expanded] 1
+[sst_vpaned_height] 337
+@28
+streamArbiterLowerFirst.clk
+streamArbiterLowerFirst.reset
+@200
+--------- Slave 0 Port --------
+@28
+[color] 2
+streamArbiterLowerFirst.io_s_in_0_valid
+[color] 2
+streamArbiterLowerFirst.io_s_in_0_ready
+@24
+streamArbiterLowerFirst.io_s_in_0_payload[31:0]
+@200
+--------- Slave 1 Port --------
+@28
+[color] 3
+streamArbiterLowerFirst.io_s_in_1_valid
+[color] 3
+streamArbiterLowerFirst.io_s_in_1_ready
+@24
+streamArbiterLowerFirst.io_s_in_1_payload[31:0]
+@200
+--------- Slave 2 Port --------
+@28
+[color] 5
+streamArbiterLowerFirst.io_s_in_2_valid
+[color] 5
+streamArbiterLowerFirst.io_s_in_2_ready
+@24
+streamArbiterLowerFirst.io_s_in_2_payload[31:0]
+@200
+--------- Slave 3 Port --------
+@28
+[color] 6
+streamArbiterLowerFirst.io_s_in_3_valid
+[color] 6
+streamArbiterLowerFirst.io_s_in_3_ready
+@25
+streamArbiterLowerFirst.io_s_in_3_payload[31:0]
+@200
+--------- Master Port --------
+@28
+[color] 7
+streamArbiterLowerFirst.io_m_out_valid
+[color] 7
+streamArbiterLowerFirst.io_m_out_ready
+@24
+streamArbiterLowerFirst.io_m_out_payload[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

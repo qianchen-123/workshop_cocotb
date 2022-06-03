@@ -1,0 +1,66 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May 30 20:50:11 2022
+[*]
+[dumpfile] "/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/roundRobin/streamArbiterRoundRobin_test.vcd"
+[dumpfile_mtime] "Fri May 27 08:28:22 2022"
+[dumpfile_size] 96798
+[savefile] "/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/roundRobin/streamArbiterRoundRobin.gtkw"
+[timestart] 0
+[size] 3438 1154
+[pos] -51 -51
+*-14.000000 95680 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 271
+[signals_width] 315
+[sst_expanded] 1
+[sst_vpaned_height] 337
+@28
+streamArbiterRoundRobin.clk
+streamArbiterRoundRobin.reset
+@200
+--------- Slave 0 Port --------
+@28
+[color] 3
+streamArbiterRoundRobin.io_s_in_0_valid
+[color] 3
+streamArbiterRoundRobin.io_s_in_0_ready
+@200
+--------- Slave 1 Port --------
+@24
+streamArbiterRoundRobin.io_s_in_0_payload[31:0]
+@28
+[color] 5
+streamArbiterRoundRobin.io_s_in_1_valid
+[color] 5
+streamArbiterRoundRobin.io_s_in_1_ready
+@200
+--------- Slave 2 Port --------
+@24
+streamArbiterRoundRobin.io_s_in_1_payload[31:0]
+@28
+[color] 6
+streamArbiterRoundRobin.io_s_in_2_valid
+[color] 6
+streamArbiterRoundRobin.io_s_in_2_ready
+@24
+streamArbiterRoundRobin.io_s_in_2_payload[31:0]
+@200
+--------- Slave 3 Port --------
+@28
+[color] 7
+streamArbiterRoundRobin.io_s_in_3_valid
+[color] 7
+streamArbiterRoundRobin.io_s_in_3_ready
+@24
+streamArbiterRoundRobin.io_s_in_3_payload[31:0]
+@201
+--------- Master Port --------
+@28
+[color] 2
+streamArbiterRoundRobin.io_m_out_valid
+[color] 2
+streamArbiterRoundRobin.io_m_out_ready
+@24
+streamArbiterRoundRobin.io_m_out_payload[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

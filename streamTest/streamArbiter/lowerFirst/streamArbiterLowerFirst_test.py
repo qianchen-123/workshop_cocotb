@@ -51,31 +51,7 @@ async def init_input_signal(dut):
 # 1. give a random valid signal
 # 2. when valid signal == 1 , give a random payload
 # 3. when valid == ready == 1, begin a next transaction (transaction strat time is random)
-async def m_0_bhv_sim(dut,transaction_time):
 
-    begin = False
-    transaction_counter = 0
-
-    while transaction_counter < transaction_time:
-        await RisingEdge(dut.clk)
-        if begin == False:
-            if dut.io_s_in_0_valid.value == 1:
-                begin = True
-                # dut.io_s_in_payload.value = random.randint(0,math.pow(2,32)-1)
-            else :
-                dut.io_s_in_0_valid.value = random.randint(0,1)
-        else :
-            if Sfire0(dut):
-                transaction_counter += 1
-                dut.io_s_in_0_valid.value = 0
-                dut.io_s_in_0_payload.value = 0
-
-            else:
-                if dut.io_s_in_0_valid.value != 1:
-                    v = random.randint(0,1)
-                    if v == 1:
-                        dut.io_s_in_0_valid.value = 1
-                        dut.io_s_in_0_payload.value = random.randint(0,math.pow(2,32)-1)
 
 async def m_0_bhv_sim(dut,transaction_time):
 
@@ -179,7 +155,8 @@ async def m_3_bhv_sim(dut,transaction_time):
                     v = random.randint(0,1)
                     if v == 1:
                         dut.io_s_in_3_valid.value = 1
-                        dut.io_s_in_3_payload.value = random.randint(0,math.pow(2,32)-1)                                                
+                        dut.io_s_in_3_payload.value = random.randint(0,math.pow(2,32)-1)
+                                                             
 
 #--- slave behavior simulator --- #
 #1. give a random ready signal
@@ -303,7 +280,7 @@ def Mfire(dut):
 @cocotb.test()
 async def streamArbiterLowerFirst_test(dut):
 
-    transaction_time = random.randint(200,500) # random number of transactions
+    transaction_time = random.randint(700,1500) # random number of transactions
     cocotb.start_soon(gen_clk(dut))
     await Timer(1000)
     cocotb.start_soon(init_input_signal(dut)) # initial all input signals

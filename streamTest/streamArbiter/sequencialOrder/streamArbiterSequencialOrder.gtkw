@@ -1,0 +1,101 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May 30 20:43:46 2022
+[*]
+[dumpfile] "/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/sequencialOrder/streamArbiterSequencialOrder_test.vcd"
+[dumpfile_mtime] "Fri May 27 08:26:43 2022"
+[dumpfile_size] 45668
+[savefile] "/home/zqc/Desktop/workshop_cocotb/streamTest/streamArbiter/sequencialOrder/streamArbiterSequencialOrder.gtkw"
+[timestart] 0
+[size] 3438 1154
+[pos] -51 -51
+*-14.000000 80030 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 433
+[signals_width] 361
+[sst_expanded] 1
+[sst_vpaned_height] 337
+@28
+streamArbiterSequencialOrder.clk
+streamArbiterSequencialOrder.reset
+@200
+--------- Slave 0 Port --------
+@28
+[color] 2
+streamArbiterSequencialOrder.io_s_in_0_valid
+[color] 2
+streamArbiterSequencialOrder.io_s_in_0_ready
+@22
+streamArbiterSequencialOrder.io_s_in_0_payload[31:0]
+@200
+--------- Slave 1 Port --------
+@28
+[color] 3
+streamArbiterSequencialOrder.io_s_in_1_valid
+[color] 3
+streamArbiterSequencialOrder.io_s_in_1_ready
+@22
+streamArbiterSequencialOrder.io_s_in_1_payload[31:0]
+@200
+--------- Slave 2 Port --------
+@28
+[color] 5
+streamArbiterSequencialOrder.io_s_in_2_valid
+[color] 5
+streamArbiterSequencialOrder.io_s_in_2_ready
+@22
+streamArbiterSequencialOrder.io_s_in_2_payload[31:0]
+@200
+--------- Slave 3 Port --------
+@28
+[color] 6
+streamArbiterSequencialOrder.io_s_in_3_valid
+[color] 6
+streamArbiterSequencialOrder.io_s_in_3_ready
+@c00022
+streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+@28
+(0)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(1)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(2)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(3)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(4)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(5)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(6)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(7)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(8)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(9)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(10)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(11)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(12)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(13)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(14)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(15)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(16)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(17)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(18)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(19)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(20)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(21)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(22)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(23)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(24)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(25)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(26)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(27)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(28)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(29)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(30)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+(31)streamArbiterSequencialOrder.io_s_in_3_payload[31:0]
+@1401200
+-group_end
+@200
+--------- Maste Port --------
+@28
+[color] 7
+streamArbiterSequencialOrder.io_m_out_valid
+[color] 7
+streamArbiterSequencialOrder.io_m_out_ready
+@22
+streamArbiterSequencialOrder.io_m_out_payload[31:0]
+[pattern_trace] 1
+[pattern_trace] 0

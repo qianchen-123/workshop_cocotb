@@ -1,0 +1,36 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Mon May 30 20:29:46 2022
+[*]
+[dumpfile] "/home/zqc/Desktop/workshop_cocotb/streamTest/basicStream/basicStream_test.vcd"
+[dumpfile_mtime] "Fri May 27 09:46:30 2022"
+[dumpfile_size] 52144
+[savefile] "/home/zqc/Desktop/workshop_cocotb/streamTest/basicStream/basicStream.gtkw"
+[timestart] 2540
+[size] 1000 600
+[pos] 497 280
+*-11.000000 8560 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 386
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@200
+--------- Stream Slave port --------
+@28
+[color] 2
+basicStream.io_s_in_valid
+[color] 2
+basicStream.io_s_in_ready
+@22
+basicStream.io_s_in_payload[31:0]
+@200
+--------- Stream Master port --------
+@28
+[color] 3
+basicStream.io_m_out_valid
+[color] 3
+basicStream.io_m_out_ready
+@22
+basicStream.io_m_out_payload[31:0]
+[pattern_trace] 1
+[pattern_trace] 0
